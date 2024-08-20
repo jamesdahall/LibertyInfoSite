@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    {{ partial "head.html" . }}
+</head>
+<body>
+    {{ partial "header.html" . }}
+    <main>
+        {{ block "main" . }}
+        {{ end }}
+    </main>
+    {{ partial "footer.html" . }}
+
+    {{ with resources.Get "js/script.js" | minify | fingerprint }}
+    <script src="{{ .RelPermalink }}" defer></script>
+    {{ end }}
+    <script src="https://kit.fontawesome.com/37543023ae.js" crossorigin="anonymous" defer></script>
+</body>
+</html>

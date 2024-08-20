@@ -1,0 +1,31 @@
+<header class="header fixed w-full bg-white z-50">
+    <nav class="flex flex-wrap items-center justify-between mx-auto px-4 w-100 xl:max-w-7xl">
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="{{ site.BaseURL }}{{ site.Params.logo }}" class="h-20" alt="Logo" />
+        </a>
+        <button data-collapse-toggle="navbar-default" type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden"
+            aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <div id="openMenu">
+                <i class="fa-solid fa-bars fa-xl"></i>
+            </div>
+            <div class="hidden" id="closeMenu">
+                <i class="fa-solid fa-x fa-xl"></i>
+            </div>
+        </button>
+        <div class="hidden w-full md:block" id="navbar">
+            <ul
+                class="font-medium flex flex-col p-4 py-2 mt-4 border border-gray-100 rounded-lg md:rounded-full bg-gray-50 text-center md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 transition-all md:justify-around menu">
+                {{ range .Site.Menus.main }}
+                <li>
+                    <a href="{{ .URL }}" class="block py-2 px-3 navLink hover:text-[#464445] transition-all nunito-400"
+                        aria-current="page" data-replace="Home">
+                        {{ .Name }}
+                    </a>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+    </nav>
+</header>

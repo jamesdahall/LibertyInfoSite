@@ -1,0 +1,32 @@
+baseURL: 'https://mudassir-nawaz.github.io/libertyinfo/'
+languageCode: 'en-us'
+title: 'My New Hugo Site'
+
+menus:
+  main:
+    - name: "Home"
+      url: /
+      weight: 10
+    - name: "Services"
+      url: "/#services"
+      weight: 20
+    - name: "About Us"
+      url: "/#about"
+      weight: 30
+    - name: "Contact"
+      url: "/#contact"
+      weight: 40
+    - name: "Blog"
+      url: "https://medium.com/@Libertyinfosec"
+      weight: 50
+
+
+params:
+  logo: "/images/bg-logo.png"
+  footer_logo: "/images/logo-with-text.png"
+  copyright: "Copyright © 2022, All Rights Reserved"
+  social_link: 
+    facebook: /
+    twitter: /
+    instagram: /
+    github: /

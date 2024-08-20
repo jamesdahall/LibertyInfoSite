@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.nunito-400 {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nunito-600 {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.nunito-700 {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.nunito-900 {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.nunito-1000 {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 1000;
+    font-style: normal;
+}
+
+@media (min-width: 768px) {
+    .navLink {
+        position: relative;
+    }
+
+    .navLink::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        border-radius: 4px;
+        background-color: #464445;
+        bottom: 0;
+        left: 0;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform .3s ease-in-out;
+    }
+
+    .navLink:hover::before {
+        transform-origin: left;
+        transform: scaleX(1);
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        height: 130px;
+        background-color: #86cf7d30 !important;
+        -webkit-transition: height 0.3s;
+        -moz-transition: height 0.3s;
+        transition: height 0.3s;
+        text-align: center;
+        line-height: 35px;
+        padding-top: 8px;
+    }
+
+    .shrink {
+        height: 80px;
+        line-height: 30px;
+        background-color: #fff !important;
+        padding-top: 0;
+    }
+
+    .header * {
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+
+    .header img {
+        height: 7rem;
+    }
+
+    .header .menu {
+        background-color: transparent;
+    }
+
+    .shrink * {
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+
+    .shrink img {
+        height: 5rem;
+    }
+
+    .shrink .menu {
+        background-color: #f0f0f0 !important;
+    }
+
+    .header #navbar {
+        width: 80%;
+    }
+
+    .shrink #navbar {
+        width: 75%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header #navbar {
+        width: 65%;
+    }
+
+    .shrink #navbar {
+        width: 55%;
+    }
+}
+
+.editorial {
+    display: block;
+    width: 100%;
+    height: 60px;
+    max-height: 60px;
+    margin: 0;
+    z-index: 5;
+    bottom: 0;
+    position: absolute;
+    left: 0px;
+    float: left;
+}
+
+.parallax1>use {
+    animation: move-forever1 10s linear infinite;
+
+    &:nth-child(1) {
+        animation-delay: -2s;
+    }
+}
+
+.parallax2>use {
+    animation: move-forever2 8s linear infinite;
+
+    &:nth-child(1) {
+        animation-delay: -2s;
+    }
+}
+
+.parallax3>use {
+    animation: move-forever3 6s linear infinite;
+
+    &:nth-child(1) {
+        animation-delay: -2s;
+    }
+}
+
+.parallax4>use {
+    animation: move-forever4 4s linear infinite;
+
+    &:nth-child(1) {
+        animation-delay: -2s;
+    }
+}
+
+@keyframes move-forever1 {
+    0% {
+        transform: translate(85px, 0%);
+    }
+
+    100% {
+        transform: translate(-90px, 0%);
+    }
+}
+
+@keyframes move-forever2 {
+    0% {
+        transform: translate(-90px, 0%);
+    }
+
+    100% {
+        transform: translate(85px, 0%);
+    }
+}
+
+@keyframes move-forever3 {
+    0% {
+        transform: translate(85px, 0%);
+    }
+
+    100% {
+        transform: translate(-90px, 0%);
+    }
+}
+
+@keyframes move-forever4 {
+    0% {
+        transform: translate(-90px, 0%);
+    }
+
+    100% {
+        transform: translate(85px, 0%);
+    }
+}

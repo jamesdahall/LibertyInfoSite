@@ -1,0 +1,42 @@
+<footer class="pb-20 bg-gradient-to-r from-zinc-800 to-zinc-900" id="contact">
+    <a href="#" class="flex justify-center items-center">
+        <img src="{{ site.BaseURL }}{{ site.Params.footer_logo }}" alt="" width="300">
+    </a>
+    <div class="px-7 md:px-0 md:max-w-xl md:mx-auto">
+        {{ with site.Params.social_link }}
+        <div class="flex flex-wrap justify-center gap-10">
+            {{ with .facebook }}
+            <a href="{{ . }}" class="p-3 bg-zinc-50 rounded-full">
+                <i class="fa-brands fa-facebook fa-xl"></i>
+            </a>
+            {{ end }}
+            {{ with .twitter }}
+            <a href="{{ . }}" class="p-3 bg-zinc-50 rounded-full">
+                <i class="fa-brands fa-x-twitter fa-xl"></i>
+            </a>
+            {{ end }}
+            {{ with .instagram }}
+            <a href="{{ . }}" class="p-3 bg-zinc-50 rounded-full">
+                <i class="fa-brands fa-instagram fa-xl"></i>
+            </a>
+            {{ end }}
+            {{ with .github }}
+            <a href="{{ . }}" class="p-3 bg-zinc-50 rounded-full">
+                <i class="fa-brands fa-github fa-xl"></i>
+            </a>
+            {{ end }}
+        </div>
+        {{ end }}
+        <div class="flex justify-between mt-10 flex-wrap">
+            {{ range .Site.Menus.main }}
+            <a href="{{ .URL }}" class="block py-2 px-3 hover:text-zinc-50 text-zinc-200 transition-all hover:underline underline-offset-8 nunito-400"
+                aria-current="page" data-replace="Home">
+                {{ .Name }}
+            </a>
+            {{ end }}
+        </div>
+    </div>
+</footer>
+<div class="py-3 bg-zinc-900 text-center text-zinc-50 nunito-400 text-lg">
+    {{ site.Params.copyright }}
+</div>

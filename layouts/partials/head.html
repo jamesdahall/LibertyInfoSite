@@ -1,0 +1,13 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+{{ $opts := dict "config" "tailwind.config.js" "noMap" true }}
+{{ with resources.Get "css/styles.css" | postCSS $opts }}
+  <link rel="stylesheet" href="{{ .RelPermalink }}">
+{{ end }}
+
+{{ with resources.Get "css/custom.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}">
+{{ end }}
+
+<title>{{ if not .IsHome }}{{ .Title }} -{{ end }}{{ .Site.Title }}</title>
