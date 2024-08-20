@@ -1,6 +1,6 @@
 baseURL: 'https://libertyinfosec.com/'
 languageCode: 'en-us'
-title: 'My New Hugo Site'
+title: 'LibertyInfoSec Federal, LLC'
 
 menus:
   main:
