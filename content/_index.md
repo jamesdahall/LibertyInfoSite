@@ -39,7 +39,7 @@ services_section:
 about_section:
     enable: true
     title: "Why We Are Different"
-    content: "From safeguarding sensitive data to supporting critical operations we enable unparalleled cybersecurity. By applying years of Federal and Healthcare space cybersecurity practices to your orgnization's unique needs we help craft custom solutations to ensure your data stays your data."
+    content: "From safeguarding sensitive data to supporting critical operations we enable unparalleled cybersecurity. By applying years of Federal and Healthcare space cybersecurity practices to your organization’s unique needs we help craft custom solutions to ensure your data stays your data."
     contact_boxes: 
         - icon: "/images/call.png"
           pretitle: "Number"
