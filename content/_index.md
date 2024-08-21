@@ -2,7 +2,7 @@
 hero_section:
     enable: true
     title: "Simple Compassionate Information Security"
-    content: "A foundation filled with care and understanding, a cybersecurity firm with the expertise to ensure your data to stays your data."
+    content: "A cybersecurity firm with the expertise to ensure your data to stays your data."
     button:
         link: /
         text: "Get a Quote"
