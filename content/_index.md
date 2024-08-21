@@ -39,7 +39,7 @@ services_section:
 about_section:
     enable: true
     title: "Why We Are Different"
-    content: "We bring years of networking, monitoring, and system-level security to bare against our clients problems. Be it in the cloud or on-prem, our team's combined experince has addressed it before."
+    content: "From safeguarding sensitive data to supporting critical operations we enable unparalleled cybersecurity. By applying years of Federal and Healthcare space cybersecurity practices to your orgnization's unique needs we help craft custom solutations to ensure your data stays your data."
     contact_boxes: 
         - icon: "/images/call.png"
           pretitle: "Number"
