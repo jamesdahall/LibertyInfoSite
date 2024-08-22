@@ -30,3 +30,8 @@ params:
     twitter: /
     instagram: /
     github: /
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
