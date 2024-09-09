@@ -11,7 +11,7 @@ boxes_section:
     enable: true
     title: "From discovery to remediation we understand cybersecurity"
     boxes:
-        - title: "Dicovery"
+        - title: "Discovery"
           icon: "magnifying-glass"
           content: "We are obsessed with preventing cyber attacks, but understand your organization has other objectives. Our experts educate and foster shared understanding"
         - title: "Evalutate"
